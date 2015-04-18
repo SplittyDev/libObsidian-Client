@@ -31,14 +31,21 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="JSON.cs" />
-    <Compile Include="JsonResponse.cs" />
-    <Compile Include="JsonResponseFactory.cs" />
-    <Compile Include="Status.cs" />
+    <Compile Include="JSON\JSON.cs" />
+    <Compile Include="JSON\JsonResponse.cs" />
+    <Compile Include="JSON\JsonResponseFactory.cs" />
+    <Compile Include="JSON\Status.cs" />
+    <Compile Include="Imaging\ImageProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="JSON\" />
+    <Folder Include="Imaging\" />
   </ItemGroup>
 </Project>
