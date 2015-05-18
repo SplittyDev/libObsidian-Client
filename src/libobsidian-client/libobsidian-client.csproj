@@ -39,6 +39,7 @@
     <Compile Include="Enumerations\HttpStatus.cs" />
     <Compile Include="Enumerations\HttpMethod.cs" />
     <Compile Include="Extensions\RequestChainingExtensions.cs" />
+    <Compile Include="API\Connector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime.Serialization" />
