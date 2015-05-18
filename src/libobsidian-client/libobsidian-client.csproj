@@ -33,9 +33,13 @@
   <ItemGroup>
     <Compile Include="JSON\JSON.cs" />
     <Compile Include="JSON\JsonResponse.cs" />
-    <Compile Include="JSON\JsonResponseFactory.cs" />
-    <Compile Include="JSON\Status.cs" />
     <Compile Include="Imaging\ImageProcessor.cs" />
+    <Compile Include="API\Connector.cs" />
+    <Compile Include="API\HttpStatus.cs" />
+    <Compile Include="API\UserCredentials.cs" />
+    <Compile Include="API\RequestChaining.cs" />
+    <Compile Include="API\APIHelper.cs" />
+    <Compile Include="Enumerations\HttpStatus.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime.Serialization" />
@@ -43,9 +47,13 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel.Selectors" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="JSON\" />
     <Folder Include="Imaging\" />
+    <Folder Include="API\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Enumerations\" />
   </ItemGroup>
 </Project>
