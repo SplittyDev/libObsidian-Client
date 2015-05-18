@@ -17,7 +17,7 @@ namespace libObsidian.Client
 		#pragma warning disable 169
 
 		[DataMember (Name = "status", IsRequired = true, Order = 1)]
-		protected Status status;
+		protected HttpStatus status;
 
 		[DataMember (Name = "message", IsRequired = false, Order = 2)]
 		protected string message;
@@ -31,10 +31,10 @@ namespace libObsidian.Client
 		#region Properties
 
 		/// <summary>
-		/// The <see cref="libObsidian.Client.Status"/> of the operation.
+		/// The <see cref="libObsidian.Client.HttpStatus"/> of the operation.
 		/// </summary>
 		/// <value>The status.</value>
-		public Status Status { get { return status; } }
+		public HttpStatus Status { get { return status; } }
 
 		/// <summary>
 		/// An optional message, further describing the status of the operation.
@@ -63,7 +63,7 @@ namespace libObsidian.Client
 			/// <param name="status">Status.</param>
 			/// <param name="message">Message.</param>
 			/// <param name="data">Data.</param>
-			public static JsonResponse Create (Status status, string message, Dictionary<string, string> data) {
+			public static JsonResponse Create (HttpStatus status, string message, Dictionary<string, string> data) {
 				return new JsonResponse {
 					status = status,
 					message = message,

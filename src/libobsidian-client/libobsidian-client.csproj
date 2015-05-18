@@ -35,12 +35,11 @@
     <Compile Include="JSON\JsonResponse.cs" />
     <Compile Include="Imaging\ImageProcessor.cs" />
     <Compile Include="API\Connector.cs" />
-    <Compile Include="API\HttpStatus.cs" />
     <Compile Include="API\UserCredentials.cs" />
-    <Compile Include="API\RequestChaining.cs" />
     <Compile Include="API\APIHelper.cs" />
     <Compile Include="Enumerations\HttpStatus.cs" />
     <Compile Include="Enumerations\HttpMethod.cs" />
+    <Compile Include="Extensions\RequestChainingExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime.Serialization" />
@@ -56,5 +55,6 @@
     <Folder Include="API\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Enumerations\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 </Project>
