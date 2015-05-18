@@ -34,7 +34,6 @@
     <Compile Include="JSON\JSON.cs" />
     <Compile Include="JSON\JsonResponse.cs" />
     <Compile Include="Imaging\ImageProcessor.cs" />
-    <Compile Include="API\Connector.cs" />
     <Compile Include="API\UserCredentials.cs" />
     <Compile Include="API\APIHelper.cs" />
     <Compile Include="Enumerations\HttpStatus.cs" />
