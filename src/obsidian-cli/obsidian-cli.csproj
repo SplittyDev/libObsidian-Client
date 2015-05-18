@@ -32,6 +32,9 @@
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
+    <Reference Include="codeaddicts.libArgument">
+      <HintPath>..\..\..\..\..\Documents\GitHub\libArgument\src\libArgument\libArgument\bin\Release\codeaddicts.libArgument.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />

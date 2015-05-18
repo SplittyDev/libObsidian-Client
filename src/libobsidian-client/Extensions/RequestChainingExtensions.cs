@@ -10,7 +10,7 @@ namespace libObsidian.Client
 		/// </summary>
 		/// <param name="request">Request.</param>
 		/// <param name="proxy">Proxy.</param>
-		public static HttpWebRequest Proxy (HttpWebRequest request, WebProxy proxy) {
+		public static HttpWebRequest Proxy (this HttpWebRequest request, WebProxy proxy) {
 			request.Proxy = proxy;
 			return request;
 		}
@@ -20,7 +20,7 @@ namespace libObsidian.Client
 		/// </summary>
 		/// <param name="request">Request.</param>
 		/// <param name="method">Method.</param>
-		public static HttpWebRequest Method (HttpWebRequest request, string method) {
+		public static HttpWebRequest Method (this HttpWebRequest request, string method) {
 			request.Method = method;
 			return request;
 		}
@@ -30,7 +30,7 @@ namespace libObsidian.Client
 		/// </summary>
 		/// <param name="request">Request.</param>
 		/// <param name="method">Method.</param>
-		public static HttpWebRequest Method (HttpWebRequest request, HttpMethod method) {
+		public static HttpWebRequest Method (this HttpWebRequest request, HttpMethod method) {
 			request.Method = Enum.GetName (typeof (HttpMethod), method).ToUpperInvariant ();
 			return request;
 		}
@@ -40,7 +40,7 @@ namespace libObsidian.Client
 		/// </summary>
 		/// <param name="request">Request.</param>
 		/// <param name="creds">Creds.</param>
-		public static HttpWebRequest Auth (HttpWebRequest request, NetworkCredential creds) {
+		public static HttpWebRequest Auth (this HttpWebRequest request, NetworkCredential creds) {
 			request.Credentials = creds;
 			return request;
 		}
@@ -50,7 +50,7 @@ namespace libObsidian.Client
 		/// </summary>
 		/// <param name="request">Request.</param>
 		/// <param name="creds">Creds.</param>
-		public static HttpWebRequest Auth (HttpWebRequest request, UserCredentials creds) {
+		public static HttpWebRequest Auth (this HttpWebRequest request, UserCredentials creds) {
 			request.Credentials = (NetworkCredential)creds;
 			return request;
 		}
@@ -61,7 +61,7 @@ namespace libObsidian.Client
 		/// <param name="request">Request.</param>
 		/// <param name="header">Header.</param>
 		/// <param name="value">Value.</param>
-		public static HttpWebRequest Header (HttpWebRequest request, string header, string value) {
+		public static HttpWebRequest Header (this HttpWebRequest request, string header, string value) {
 			request.Headers[header] = value;
 			return request;
 		}
@@ -72,7 +72,7 @@ namespace libObsidian.Client
 		/// <returns>The key.</returns>
 		/// <param name="request">Request.</param>
 		/// <param name="apiKey">API key.</param>
-		public static HttpWebRequest SignKey (HttpWebRequest request, string apiKey) {
+		public static HttpWebRequest SignKey (this HttpWebRequest request, string apiKey) {
 			return request.Header ("apikey", apiKey.ToBase64 ());
 		}
 	}
