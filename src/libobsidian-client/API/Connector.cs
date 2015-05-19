@@ -181,7 +181,7 @@ namespace libObsidian.Client
 			var request = WebRequest.CreateHttp (API_BASE/API_USERS/cred.Username)
 				.Proxy (proxy)
 				.Method (HttpMethod.PUT)
-				.Auth (UserCredentials.Unauthenticated)
+				.Auth (cred)
 				.SignKey (apikey);
 
 			// Get response
