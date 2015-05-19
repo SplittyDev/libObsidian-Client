@@ -8,6 +8,8 @@ namespace libObsidian.Client
 	/// </summary>
 	public class UserCredentials
 	{
+		static UserCredentials unauthenticated;
+
 		readonly string username;
 		readonly string password;
 
@@ -22,6 +24,18 @@ namespace libObsidian.Client
 		/// </summary>
 		/// <value>The password.</value>
 		public string Password { get { return password; } }
+
+		/// <summary>
+		/// Unauthenticated user singleton.
+		/// </summary>
+		/// <value>The unauthenticated.</value>
+		public static UserCredentials Unauthenticated {
+			get {
+				if (unauthenticated == null)
+					unauthenticated = new UserCredentials (string.Empty, string.Empty);
+				return unauthenticated;
+			}
+		}
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="libObsidian.Client.UserCredentials"/> class.

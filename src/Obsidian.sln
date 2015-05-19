@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "obsidian-cli", "obsidian-cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libobsidian-client", "libobsidian-client\libobsidian-client.csproj", "{22132478-12AF-4CF5-AA22-1446D4053A42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libobsidian-tests", "libobsidian-tests\libobsidian-tests.csproj", "{63D0B96D-C41E-445F-AB84-9F54172B8A4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +17,10 @@ Global
 		{22132478-12AF-4CF5-AA22-1446D4053A42}.Debug|x86.Build.0 = Debug|x86
 		{22132478-12AF-4CF5-AA22-1446D4053A42}.Release|x86.ActiveCfg = Release|x86
 		{22132478-12AF-4CF5-AA22-1446D4053A42}.Release|x86.Build.0 = Release|x86
+		{63D0B96D-C41E-445F-AB84-9F54172B8A4F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{63D0B96D-C41E-445F-AB84-9F54172B8A4F}.Debug|x86.Build.0 = Debug|Any CPU
+		{63D0B96D-C41E-445F-AB84-9F54172B8A4F}.Release|x86.ActiveCfg = Release|Any CPU
+		{63D0B96D-C41E-445F-AB84-9F54172B8A4F}.Release|x86.Build.0 = Release|Any CPU
 		{701BFA24-3B2D-4DBA-90DF-042752591550}.Debug|x86.ActiveCfg = Debug|x86
 		{701BFA24-3B2D-4DBA-90DF-042752591550}.Debug|x86.Build.0 = Debug|x86
 		{701BFA24-3B2D-4DBA-90DF-042752591550}.Release|x86.ActiveCfg = Release|x86
