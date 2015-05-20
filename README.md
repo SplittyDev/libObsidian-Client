@@ -10,7 +10,6 @@ First, you'll need to clone the repository.
 This is the same for Microsoft Windows, MacOS X, Linux and other Unixoids:
 ```
 $ git clone https://github.com/SplittyDev/libObsidian-Client.git
-$ cd libObsidian-Client\src
 ```
 Now you'll probably want to build the release configuration of the client library.
 
@@ -24,6 +23,6 @@ $ msbuild Obsidian.sln /p:Configuration=Release
 ### MacOS X, Linux and other Unixoids (Mono)
 Use xbuild:
 ```
-$ cd libObsidian-Client\src
+$ cd libObsidian-Client/src
 $ xbuild /p:Configuration=Release Obsidian.sln
 ```
