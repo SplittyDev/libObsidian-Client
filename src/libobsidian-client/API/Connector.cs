@@ -73,7 +73,7 @@ namespace libObsidian.Client
 		/// <summary>
 		/// Initializes a new instance of the <see cref="libObsidian.Client.Connector"/> class.
 		/// </summary>
-		protected Connector (string apiKey)
+		protected Connector (string apiKey, ApiTarget target = ApiTarget.v1)
 		{
 			apikey = apiKey;
 			proxy = new WebProxy ();
@@ -114,7 +114,7 @@ namespace libObsidian.Client
 
 		#endregion
 
-		#region Public API Functions
+		#region Public API v1 Functions
 
 		/// <summary>
 		/// Authenticates the specified user.

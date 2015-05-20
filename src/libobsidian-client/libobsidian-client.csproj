@@ -41,6 +41,7 @@
     <Compile Include="Extensions\RequestChainingExtensions.cs" />
     <Compile Include="API\Connector.cs" />
     <Compile Include="API\ApiUrl.cs" />
+    <Compile Include="Enumerations\ApiTarget.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime.Serialization" />
